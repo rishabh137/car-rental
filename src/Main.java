@@ -59,12 +59,7 @@ class Car extends Vehicle {
     }
 }
 
-interface Renter {
-    String getCustomerId();
-    String getName();
-}
-
-class Customer implements Renter {
+class Customer {
     private String customerId;
     private String name;
 
@@ -73,12 +68,10 @@ class Customer implements Renter {
         this.name = name;
     }
 
-    @Override
     public String getCustomerId() {
         return customerId;
     }
 
-    @Override
     public String getName() {
         return name;
     }
